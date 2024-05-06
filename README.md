@@ -4,12 +4,12 @@
 This Command Line Interface (CLI) application allows users to manage a database of questions and their corresponding answers. It offers functionalities to add questions with answers and to query answers for a specific question. If a question is not found, it responds humorously with a reference to "The Hitchhiker's Guide to the Galaxy".
 
 ## Features
-- **Add Questions**: Input a question followed by one or multiple answers, a separator between a question and answers is a question mark `?`, every answer resides inside of doublequotes `"`:
+- **Add Questions**: Input a question followed by one or multiple space-separated answers, a separator between a question and answers is a question mark `?`, every answer resides inside of doublequotes `"` (or every word separated by a space is treated as a separate answer otherwise):
   ```
   <question>? “<answer1>” “<answer2>” “<answerX>”
   ```
 
-- **Query Questions**: Ask a specific question to retrieve all associated answers.
+- **Query Questions**: Ask a specific question to retrieve all associated answers. A question should end with question mark
 
 ## Restrictions:
 - A question is a string with max 255 chars
