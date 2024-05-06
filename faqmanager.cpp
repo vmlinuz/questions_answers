@@ -25,6 +25,9 @@ void FAQManager::addQuestion(const std::string &question, const std::vector<std:
 }
 
 std::vector<std::string> FAQManager::getAnswers(const std::string &question) const {
+    if (!isValidInput(question, true)) {
+        return {INVALID_INPUT};
+    }
     auto it = faqs.find(question);
     if (it != faqs.end()) {
         return it->second;

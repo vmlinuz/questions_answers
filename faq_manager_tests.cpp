@@ -125,6 +125,15 @@ TEST_F(FAQManagerTest, InvalidFormatNoQuestionMark) {
     EXPECT_EQ(retrievedAnswers, invalidInputResponse);
 }
 
+TEST_F(FAQManagerTest, InvalidFormatNoQuestionMarkAndQuestionDoesntExist) {
+    std::string question = "Is this a question";
+    std::vector<std::string> answers = {"Yes"};
+
+    auto retrievedAnswers = faqManager.getAnswers(question);
+
+    EXPECT_EQ(retrievedAnswers, invalidInputResponse);
+}
+
 TEST_F(FAQManagerTest, DuplicateAnswers) {
     std::string question = "What are common colors?";
     std::vector<std::string> answers = {"Blue", "Blue"};
