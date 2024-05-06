@@ -28,7 +28,7 @@ To build the application, execute the following commands:
 ```bash
 # Clone the repository
 git clone https://github.com/vmlinuz/questions_answers.git
-cd [Your Repository Directory]
+cd questions_answers
 
 # Create a build directory
 mkdir build && cd build
