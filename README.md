@@ -6,7 +6,7 @@ This Command Line Interface (CLI) application allows users to manage a database 
 ## Features
 - **Add Questions**: Input a question followed by one or multiple space-separated answers, a separator between a question and answers is a question mark `?`, every answer resides inside of doublequotes `"` (or every word separated by a space is treated as a separate answer otherwise):
   ```
-  <question>? “<answer1>” “<answer2>” “<answerX>”
+  <question>? "<answer1>" "<answer2>" "<answerX>"
   ```
 
 - **Query Questions**: Ask a specific question to retrieve all associated answers. A question should end with question mark
